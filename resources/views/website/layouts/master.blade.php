@@ -32,6 +32,12 @@
     <link href="{{ asset('public/website/assets/css/unit-test.css') }}" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
+    <style>
+        .btn
+        {
+            background: red!important;
+        }
+    </style>
 
 </head>
 
@@ -57,7 +63,7 @@
                         </p>
                         <ul>
                             <li>
-                                <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                                <a href="{{ route('member') }}" class="btn btn-danger">Member</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone-alt"></i> +4733378901
@@ -65,6 +71,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-3 text-end">
                     <div class="social">
                         <ul>
